@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
 import { ProductlistComponent } from './components/productlist/productlist.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     AboutpageComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

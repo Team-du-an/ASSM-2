@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
+import { ProductlistComponent } from './components/productlist/productlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    AboutpageComponent
+    AboutpageComponent,
+    ProductlistComponent
   ],
   imports: [
     BrowserModule,

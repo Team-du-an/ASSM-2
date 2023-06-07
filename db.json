@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": "admin",
+      "username": "Nguyễn Admin",
+      "email": "admin@gmail.com",
+      "password": "@19112k3Az",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "test1",
+      "username": "Test Nguyen",
+      "email": "test1@gmail.com",
+      "password": "@19112k3aZ",
+      "gender": "female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "ronaldo",
+      "username": "Cris Naldo",
+      "password": "@Ronaldo123",
+      "email": "ronaldo@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isActive": true
+    },
+    {
+      "id": "rooney10",
+      "username": "Wayne Rooney",
+      "password": "rooney10@Z",
+      "email": "rooney10@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isActive": true
+    },
+    {
+      "id": "neymar10",
+      "username": "Neymar Jr",
+      "password": "@neymar10Az",
+      "email": "neymar10@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isActive": true
+    },
+    {
+      "id": "henry14",
+      "username": "Thiery Henry",
+      "email": "henry14@gmail.com",
+      "password": "@henry14Az",
+      "gender": "male",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "thanh123",
+      "username": "Thanh Nguyen",
+      "password": "@19112k3Az",
+      "email": "thanh123@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isActive": true
+    }
+  ],
+  "roles": [
+    {
+      "code": "staff",
+      "name": "staff"
+    },
+    {
+      "code": "quality",
+      "name": "quality"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "product 1 updated",
+      "description": "mo ta san pham 1 updated",
+      "categoryId": 1,
+      "images": [
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686129399/uploads/kq3ug5o70wdqpuz6fck8.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686129399/uploads/uivh6qpp2vtmfpzbi3pv.jpg"
+      ],
+      "cost": 2000,
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "title": "Iphone XS MAX",
+      "description": "mo ta san pham 2",
+      "categoryId": 2,
+      "images": [
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686133264/uploads/ggo6hxbtoxmivv8qfirr.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686133264/uploads/fuo8vxa0mopcjchgv56y.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686133264/uploads/awbdzzdfuyix896erhzp.jpg"
+      ],
+      "cost": 10000,
+      "price": 9888
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Iphone"
+    },
+    {
+      "id": 2,
+      "title": "Xiao Mi"
+    },
+    {
+      "id": 3,
+      "title": "Realme"
+    },
+    {
+      "id": 4,
+      "title": "Oppo"
+    },
+    {
+      "id": 5,
+      "title": "Nokia"
+    }
+  ]
+}

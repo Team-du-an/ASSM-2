@@ -1,0 +1,51 @@
+<div>
+
+    <table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="title">
+            <th mat-header-cell mat-sort-header *matHeaderCellDef> Tên </th>
+            <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="images">
+            <th mat-header-cell mat-sort-header *matHeaderCellDef> Ảnh </th>
+            <td mat-cell *matCellDef="let element"><img class="w-20 py-2 h-20" src="{{element.images[0]}}" alt=""></td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="category">
+            <th mat-header-cell mat-sort-header *matHeaderCellDef> Loại </th>
+            <td mat-cell *matCellDef="let element"> {{element.categoryId}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="cost">
+            <th mat-header-cell mat-sort-header *matHeaderCellDef> Giá </th>
+            <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="price">
+            <th mat-header-cell mat-sort-header *matHeaderCellDef> Giá gốc </th>
+            <td mat-cell *matCellDef="let element"> {{element.cost}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+            <th mat-header-cell mat-sort-header mat-sort-header *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let element">
+                <button type="button" class="bg-blue-500 px-4 py-2 rounded-sm text-white"
+                    (click)="updateProduct(element.id)">Cập nhật</button>
+                <button type="button" class="bg-red-500 ml-2 px-4 py-2 rounded-sm text-white"
+                    (click)="modelDelete(element.id)">Xóa</button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons mat-raised-button
+        aria-label="Select page of periodic elements">
+    </mat-paginator>
+</div>

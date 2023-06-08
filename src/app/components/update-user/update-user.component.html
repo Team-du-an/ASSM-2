@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-header>
+        <h1>Cập nhật</h1>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="registerform" (ngSubmit)="handleUpdate()">
+            <div>
+                <mat-form-field>
+                    <mat-label>Quyền</mat-label>
+                    <mat-select formControlName="role">
+                        <mat-option [value]="">Chọn quyền</mat-option>
+                        <mat-option *ngFor="let item of roleList" [value]="item.code">
+                            {{item.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <section class="example-section">
+                <mat-checkbox formControlName="isActive" class="example-margin">Is Active!</mat-checkbox>
+            </section>
+
+            <div class="d-flex gap-2 mt-4">
+                <button mat-raised-button color="primary" type="submit">Cập nhật</button>
+                <button mat-dialog-close mat-raised-button color="accent">Đóng</button>
+            </div>
+
+        </form>
+    </mat-card-content>
+</mat-card>

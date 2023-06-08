@@ -1,0 +1,52 @@
+<form class="example-form" [formGroup]="createForm" (ngSubmit)="onHandleCreate()">
+    <mat-form-field class="example-full-width">
+        <mat-label>Tên sản phẩm</mat-label>
+        <input type="text" formControlName="title" matInput placeholder="Tên sản phẩm">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Mô tả sản phẩm</mat-label>
+        <textarea type="text" formControlName="description" matInput placeholder="Mô tả..."></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Loại sản phẩm</mat-label>
+        <mat-select formControlName="categoryId">
+            <mat-option value="">-- Loại sản phẩm --</mat-option>
+            <mat-option *ngFor="let category of categories" [value]="category.id">
+                {{category.title}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <!-- in app.component.html -->
+    <ngx-dropzone (change)="onSelect($event)">
+        <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+        <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" [removable]="true" (removed)="onRemove(f)"
+            *ngFor="let f of files" [file]="f">
+            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+        </ngx-dropzone-image-preview>
+    </ngx-dropzone>
+
+
+    <!-- <input type="file" multiple formControlName="images" (change)="onHandleUpload($event)"> -->
+
+    <button class="px-4 py-2 bg-red-500 rounded-sm text-white mb-4 mt-4" type="button" (click)="onHandleUpload()">Upload
+    </button>
+    <span class="ms-2">(Vui
+        lòng
+        upload ảnh lên
+        trước)</span>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Giá gốc</mat-label>
+        <input type="number" formControlName="cost" matInput placeholder="Giá gôc">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Giá sản phẩm</mat-label>
+        <input type="number" formControlName="price" matInput placeholder="Giá sản phẩm">
+    </mat-form-field>
+
+    <button type="submit" class="mt-4 bg-blue-500 text-xl text-white px-4 py-2 rounded-sm">Tạo sản phẩm</button>
+</form>

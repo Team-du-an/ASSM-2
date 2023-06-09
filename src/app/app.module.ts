@@ -9,13 +9,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    ProductPageComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -27,7 +27,7 @@ export class UpdateProductComponent {
     categories: any[] = [];
     editData: any;
 
-    files: File[] = [];
+    files: File[] | any = [];
 
     onSelect(event: any) {
         console.log(event);
@@ -69,7 +69,7 @@ export class UpdateProductComponent {
         title: this.formBuilder.control('', [Validators.required, Validators.minLength(3)]),
         description: this.formBuilder.control('', [Validators.required, Validators.minLength(10)]),
         categoryId: this.formBuilder.control('', [Validators.required]),
-        images: this.formBuilder.control(['']),
+        images: this.formBuilder.control(new Array()),
         cost: this.formBuilder.control(0, [Validators.required, Validators.min(1)]),
         price: this.formBuilder.control(0, [Validators.required, Validators.min(1)]),
     });
@@ -83,6 +83,7 @@ export class UpdateProductComponent {
             this.service.getProductById(this.data.usercode).subscribe((res) => {
                 console.log(res);
 
+                this.files = res.images;
                 this.editData = res;
 
                 this.loadProductdata(this.data.usercode);

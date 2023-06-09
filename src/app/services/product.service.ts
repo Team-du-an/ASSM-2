@@ -11,8 +11,8 @@ export class ProductService {
 
     // Product service
 
-    createProduct(inputField: IProduct): Observable<IProduct> {
-        return this.http.post<IProduct>('http://localhost:3000/products', inputField);
+    createProduct(inputField: any): Observable<any> {
+        return this.http.post<any>('http://localhost:3000/products', inputField);
     }
 
     getAllProduct(): Observable<IProduct[]> {
@@ -23,8 +23,8 @@ export class ProductService {
         return this.http.get<IProduct>(`http://localhost:3000/products/${id}`);
     }
 
-    updateProduct(id: number, inputField: IProduct): Observable<IProduct> {
-        return this.http.put<IProduct>(`http://localhost:3000/products/${id}`, inputField);
+    updateProduct(id: number, inputField: any): Observable<any> {
+        return this.http.put<any>(`http://localhost:3000/products/${id}`, inputField);
     }
 
     deleteProduct(id: number) {
@@ -41,5 +41,17 @@ export class ProductService {
 
     uploadFiles(files: any): Observable<any> {
         return this.http.post<any>(`https://api.cloudinary.com/v1_1/dh96qogra/image/upload`, files);
+    }
+
+    // Paginator
+
+    paginatorProduct(page: string): Observable<string> {
+        return this.http.get<string>(`http://localhost:3000/products?_page=${page}&_limit=10`);
+    }
+
+    // Filter by category
+
+    filterByCategory(category: number): Observable<number> {
+        return this.http.get<number>(`http://localhost:3000/products?categoryId=${category}`);
     }
 }

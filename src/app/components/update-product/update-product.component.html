@@ -23,11 +23,19 @@
         <!-- in app.component.html -->
         <ngx-dropzone (change)="onSelect($event)">
             <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+
+        </ngx-dropzone>
+
+        <!-- <ngx-dropzone (change)="onSelect($event)">
+            <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
             <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" [removable]="true" (removed)="onRemove(f)"
-                *ngFor="let f of files" [file]="f">
+                *ngFor="let f of viewFileUpload" [file]="f">
                 <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
             </ngx-dropzone-image-preview>
-        </ngx-dropzone>
+        </ngx-dropzone> -->
 
 
         <!-- <input type="file" multiple formControlName="images" (change)="onHandleUpload($event)"> -->
@@ -50,6 +58,7 @@
             <input type="number" formControlName="price" matInput placeholder="Giá sản phẩm">
         </mat-form-field>
 
-        <button type="submit" class="mt-4 bg-blue-500 text-xl text-white px-4 py-2 rounded-sm">Tạo sản phẩm</button>
+        <button type="submit" class="mt-4 bg-blue-500 text-xl text-white px-4 py-2 rounded-sm">Cập nhật sản
+            phẩm</button>
     </form>
 </div>

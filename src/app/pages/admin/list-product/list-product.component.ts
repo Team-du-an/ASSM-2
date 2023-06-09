@@ -21,6 +21,7 @@ export class ListProductComponent {
 
     products: any;
     dataSource: any;
+
     displayedColumns: string[] = ['title', 'images', 'category', 'cost', 'price', 'action'];
 
     @ViewChild(MatPaginator) paginator!: MatPaginator;

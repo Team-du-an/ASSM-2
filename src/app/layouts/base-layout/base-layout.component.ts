@@ -10,6 +10,7 @@ import { AuthService } from 'src/app/services/auth.service';
 export class BaseLayoutComponent implements DoCheck {
     isMenuRequired = false;
     isMenuAdminUser = false;
+    isSidebar = false;
 
     constructor(private router: Router, private service: AuthService) {}
 
@@ -27,5 +28,13 @@ export class BaseLayoutComponent implements DoCheck {
         } else {
             this.isMenuAdminUser = false;
         }
+    }
+
+    handleShow(): void {
+        this.isSidebar = true;
+    }
+
+    hanldeHide(): void {
+        this.isSidebar = false;
     }
 }

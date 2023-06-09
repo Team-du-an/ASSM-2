@@ -76,29 +76,32 @@
   ],
   "products": [
     {
-      "id": 1,
-      "title": "product 1 updated",
-      "description": "mo ta san pham 1 updated",
-      "categoryId": 1,
-      "images": [
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686129399/uploads/kq3ug5o70wdqpuz6fck8.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686129399/uploads/uivh6qpp2vtmfpzbi3pv.jpg"
-      ],
-      "cost": 2000,
-      "price": 1000
-    },
-    {
       "id": 2,
       "title": "Iphone XS MAX",
-      "description": "mo ta san pham 2",
-      "categoryId": 2,
+      "description": "iPhone XS Max là một trong những sản phẩm điện thoại cao cấp của nhà sản xuất Apple, được ra mắt vào năm 2018. Điện thoại này có màn hình OLED kích thước 6.5 inch với độ phân giải 1242 x 2688 pixel, cho khả năng hiển thị các hình ảnh và video rất sắc nét. iPhone XS Max được trang bị bộ vi xử lý A12 Bionic, RAM 4 GB và bộ nhớ trong có sẵn từ 64GB cho đến 512GB để lưu trữ các tập tin và dữ liệu. Máy ảnh kép 12MP ở mặt sau cho chất lượng hình ảnh rất tốt, còn camera trước là 7MP. iPhone XS Max cũng được tích hợp nhiều tính năng tiên tiến như Face ID, công nghệ sạc nhanh và chống nước, sử dụng hệ điều hành iOS 12 và có hàng loạt tiện ích khác như ứng dụng chụp ảnh, tạo video và tin nhắn iMessage.",
+      "categoryId": 1,
       "images": [
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686133264/uploads/ggo6hxbtoxmivv8qfirr.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686133264/uploads/fuo8vxa0mopcjchgv56y.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686133264/uploads/awbdzzdfuyix896erhzp.jpg"
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/coalqsdfkzmbliyykgyo.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/fobz10z1bqflvrynhgwg.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/rdimuuxv9gvpzvsvpzyw.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/zdfem5v0qklbzctharxw.jpg"
       ],
       "cost": 10000,
       "price": 9888
+    },
+    {
+      "title": "Điện thoại iPhone 14 Pro Max",
+      "description": "iPhone 14 Pro Max một siêu phẩm trong giới smartphone được nhà Táo tung ra thị trường vào tháng 09/2022. Máy trang bị con chip Apple A16 Bionic vô cùng mạnh mẽ, đi kèm theo đó là thiết kế hình màn hình mới, hứa hẹn mang lại những trải nghiệm đầy mới mẻ cho người dùng iPhone.",
+      "categoryId": 1,
+      "images": [
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/zbaivtv9z8taspgb1u9u.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/kcvjx6sorbcxsrhhclq6.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/ee9itrqgwkntff0nbwla.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/r5gsuqucxelwoag1lyiq.jpg"
+      ],
+      "cost": 2900,
+      "price": 2890,
+      "id": 3
     }
   ],
   "categories": [
@@ -121,6 +124,10 @@
     {
       "id": 5,
       "title": "Nokia"
+    },
+    {
+      "id": 6,
+      "title": "Samsung"
     }
   ]
 }

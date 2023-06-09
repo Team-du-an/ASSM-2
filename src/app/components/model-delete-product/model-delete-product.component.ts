@@ -55,4 +55,8 @@ export class ModelDeleteProductComponent {
             this.dialogRef.close();
         });
     }
+
+    onCloseModal() {
+        this.dialogRef.close();
+    }
 }

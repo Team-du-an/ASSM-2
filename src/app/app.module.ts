@@ -21,34 +21,12 @@ import { UpdateProductComponent } from './components/update-product/update-produ
 import { ModelDeleteProductComponent } from './components/model-delete-product/model-delete-product.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        RegisterComponent,
-        LoginComponent,
-        BaseLayoutComponent,
-        ListUserComponent,
-        UpdateUserComponent,
-        DashboardComponent,
-        CreateProductComponent,
-        ListProductComponent,
-        UpdateProductComponent,
-        ModelDeleteProductComponent,
-        SigninComponent,
-        SignupComponent,
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        MaterialModule,
-        NgxDropzoneModule,
-
-        ToastrModule.forRoot(),
-    ],
+    declarations: [AppComponent, HomePageComponent, SigninComponent, SignupComponent],
+    imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, RouterModule, ReactiveFormsModule, FormsModule],
     providers: [],
     bootstrap: [AppComponent],
 })

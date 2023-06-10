@@ -1,4 +1,4 @@
-<section class="flex items-center font-poppins dark:bg-gray-700 ">
+<section class="max-w-full w-[1260px] mx-auto mt-10 flex items-center font-poppins dark:bg-gray-700 ">
     <div *ngIf="products.length != 0" class="justify-center flex-1 px-4 py-6 mx-auto max-w-7xl lg:py-4 md:px-6">
         <div class="p-8 bg-gray-50 dark:bg-gray-800">
             <h2 class="mb-8 text-4xl font-bold dark:text-gray-400">Giỏ hàng của tôi</h2>
@@ -123,9 +123,9 @@
         </div>
     </div>
 
-    <div class="flex justify-center items-center space-x-3" *ngIf="products.length == 0">
+    <div class="flex justify-center items-center space-x-3 w-full" *ngIf="products.length == 0">
         <h1>Bạn chưa có sản phẩm nào</h1>
 
-        <a routerLink="/admin" class="bg-blue-500 text-white text-xl px-4 py-2 rounded-md">Đặt hàng ngay!</a>
+        <a routerLink="" class="bg-blue-500 text-white text-xl px-4 py-2 rounded-md">Đặt hàng ngay!</a>
     </div>
 </section>

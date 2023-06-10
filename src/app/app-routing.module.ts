@@ -8,11 +8,12 @@ import { ListUserComponent } from './pages/admin/list-user/list-user.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { CreateProductComponent } from './pages/admin/create-product/create-product.component';
 import { ListProductComponent } from './pages/admin/list-product/list-product.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
 const routes: Routes = [
     {
         path: 'admin',
-        component: BaseLayoutComponent,
+        component: AdminLayoutComponent,
         children: [
             {
                 path: '',

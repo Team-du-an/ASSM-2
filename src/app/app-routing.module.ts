@@ -10,11 +10,15 @@ import { CreateProductComponent } from './pages/admin/create-product/create-prod
 import { ListProductComponent } from './pages/admin/list-product/list-product.component';
 import { SigninComponent } from './pages/signin/signin.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
 
 const routes: Routes = [
     {
         path: 'admin',
-        component: BaseLayoutComponent,
+        component: AdminLayoutComponent,
         children: [
             {
                 path: '',
@@ -49,9 +53,26 @@ const routes: Routes = [
             },
         ],
     },
-
-    { path: 'signin', component: SigninComponent },
-    { path: 'signup', component: SignupComponent },
+    {
+        path: '',
+        component: BaseLayoutComponent,
+        children: [
+            { path: 'signin', component: SigninComponent },
+            { path: 'signup', component: SignupComponent },
+            {
+                path: '',
+                component: HomePageComponent,
+            },
+            {
+                path: 'cart',
+                component: CartPageComponent,
+            },
+            {
+                path: 'products',
+                component: ProductPageComponent,
+            },
+        ],
+    },
 ];
 
 @NgModule({

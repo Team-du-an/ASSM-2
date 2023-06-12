@@ -1,0 +1,37 @@
+.success-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .notification-content {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  .notification-text {
+    font-weight: bold;
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes bounceInUp {
+    0% {
+      transform: translate3d(0, 100%, 0);
+    }
+    60% {
+      transform: translate3d(0, -10%, 0);
+    }
+    80% {
+      transform: translate3d(0, 5%, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }

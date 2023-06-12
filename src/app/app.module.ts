@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { ToastrModule } from 'ngx-toastr';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -31,9 +32,11 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { MacPageComponent } from './pages/mac-page/mac-page.component';
 
 @NgModule({
     declarations: [
+        
         AppComponent,
         RegisterComponent,
         LoginComponent,
@@ -54,8 +57,10 @@ import { BlogComponent } from './pages/blog/blog.component';
         ContactComponent,
         AboutComponent,
         BlogComponent,
+        MacPageComponent,
     ],
     imports: [
+        FormsModule,
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,

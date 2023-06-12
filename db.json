@@ -111,6 +111,15 @@
       ],
       "cost": 2911,
       "price": 2890
+    },
+    {
+      "title": "MacBook Pro 16 inch 2023 M2 Pro 12CPU - 19GPU",
+      "description": "sản phẩm hơi đăc *** nhưng xịn",
+      "categoryId": 2,
+      "images": ["https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_300x300/https://cdn.tgdd.vn/Products/Images/44/302150/s16/mac-pro-16-m2-bac-650x650.png"],
+      "cost": 65.79,
+      "price": 61.59,
+      "id": 4
     }
   ],
   "categories": [
@@ -120,15 +129,15 @@
     },
     {
       "id": 2,
-      "title": "Xiao Mi"
+      "title": "Mac"
     },
     {
       "id": 3,
-      "title": "Realme"
+      "title": "Âm Thanh"
     },
     {
       "id": 4,
-      "title": "Oppo"
+      "title": "Phụ Kiện"
     },
     {
       "id": 5,

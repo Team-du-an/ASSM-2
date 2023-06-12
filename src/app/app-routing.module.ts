@@ -17,6 +17,7 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 const routes: Routes = [
     {
@@ -73,6 +74,10 @@ const routes: Routes = [
             {
                 path: 'products',
                 component: ProductPageComponent,
+            },
+            {
+                path: 'products/:id',
+                component: ProductDetailComponent,
             },
             {
                 path: 'contact',

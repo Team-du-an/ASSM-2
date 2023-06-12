@@ -1,133 +1,134 @@
 {
-  "users": [
-    {
-      "id": "admin",
-      "username": "Nguyễn Admin",
-      "email": "admin@gmail.com",
-      "password": "@19112k3Az",
-      "gender": "male",
-      "role": "admin",
-      "isActive": true
-    },
-    {
-      "id": "test1",
-      "username": "Test Nguyen",
-      "email": "test1@gmail.com",
-      "password": "@19112k3aZ",
-      "gender": "female",
-      "role": "",
-      "isActive": false
-    },
-    {
-      "id": "ronaldo",
-      "username": "Cris Naldo",
-      "password": "@Ronaldo123",
-      "email": "ronaldo@gmail.com",
-      "gender": "male",
-      "role": "staff",
-      "isActive": true
-    },
-    {
-      "id": "rooney10",
-      "username": "Wayne Rooney",
-      "password": "rooney10@Z",
-      "email": "rooney10@gmail.com",
-      "gender": "male",
-      "role": "staff",
-      "isActive": true
-    },
-    {
-      "id": "neymar10",
-      "username": "Neymar Jr",
-      "password": "@neymar10Az",
-      "email": "neymar10@gmail.com",
-      "gender": "male",
-      "role": "staff",
-      "isActive": true
-    },
-    {
-      "id": "henry14",
-      "username": "Thiery Henry",
-      "email": "henry14@gmail.com",
-      "password": "@henry14Az",
-      "gender": "male",
-      "role": "",
-      "isActive": false
-    },
-    {
-      "id": "thanh123",
-      "username": "Thanh Nguyen",
-      "password": "@19112k3Az",
-      "email": "thanh123@gmail.com",
-      "gender": "male",
-      "role": "",
-      "isActive": true
-    }
-  ],
-  "roles": [
-    {
-      "code": "staff",
-      "name": "staff"
-    },
-    {
-      "code": "quality",
-      "name": "quality"
-    }
-  ],
-  "products": [
-    {
-      "id": 2,
-      "title": "Iphone XS MAX",
-      "description": "iPhone XS Max là một trong những sản phẩm điện thoại cao cấp của nhà sản xuất Apple, được ra mắt vào năm 2018. Điện thoại này có màn hình OLED kích thước 6.5 inch với độ phân giải 1242 x 2688 pixel, cho khả năng hiển thị các hình ảnh và video rất sắc nét. iPhone XS Max được trang bị bộ vi xử lý A12 Bionic, RAM 4 GB và bộ nhớ trong có sẵn từ 64GB cho đến 512GB để lưu trữ các tập tin và dữ liệu. Máy ảnh kép 12MP ở mặt sau cho chất lượng hình ảnh rất tốt, còn camera trước là 7MP. iPhone XS Max cũng được tích hợp nhiều tính năng tiên tiến như Face ID, công nghệ sạc nhanh và chống nước, sử dụng hệ điều hành iOS 12 và có hàng loạt tiện ích khác như ứng dụng chụp ảnh, tạo video và tin nhắn iMessage.",
-      "categoryId": 1,
-      "images": [
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/coalqsdfkzmbliyykgyo.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/fobz10z1bqflvrynhgwg.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/rdimuuxv9gvpzvsvpzyw.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/zdfem5v0qklbzctharxw.jpg"
-      ],
-      "cost": 10000,
-      "price": 9888
-    },
-    {
-      "title": "Điện thoại iPhone 14 Pro Max",
-      "description": "iPhone 14 Pro Max một siêu phẩm trong giới smartphone được nhà Táo tung ra thị trường vào tháng 09/2022. Máy trang bị con chip Apple A16 Bionic vô cùng mạnh mẽ, đi kèm theo đó là thiết kế hình màn hình mới, hứa hẹn mang lại những trải nghiệm đầy mới mẻ cho người dùng iPhone.",
-      "categoryId": 1,
-      "images": [
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/zbaivtv9z8taspgb1u9u.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/kcvjx6sorbcxsrhhclq6.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/ee9itrqgwkntff0nbwla.jpg",
-        "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/r5gsuqucxelwoag1lyiq.jpg"
-      ],
-      "cost": 2900,
-      "price": 2890,
-      "id": 3
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "title": "Iphone"
-    },
-    {
-      "id": 2,
-      "title": "Xiao Mi"
-    },
-    {
-      "id": 3,
-      "title": "Realme"
-    },
-    {
-      "id": 4,
-      "title": "Oppo"
-    },
-    {
-      "id": 5,
-      "title": "Nokia"
-    },
-    {
-      "id": 6,
-      "title": "Samsung"
-    }
-  ]
+    "users": [
+        {
+            "id": "admin",
+            "username": "Nguyễn Admin",
+            "email": "admin@gmail.com",
+            "password": "@19112k3Az",
+            "gender": "male",
+            "role": "admin",
+            "isActive": true
+        },
+        {
+            "id": "test1",
+            "username": "Test Nguyen",
+            "email": "test1@gmail.com",
+            "password": "@19112k3aZ",
+            "gender": "female",
+            "role": "",
+            "isActive": false
+        },
+        {
+            "id": "ronaldo",
+            "username": "Cris Naldo",
+            "password": "@Ronaldo123",
+            "email": "ronaldo@gmail.com",
+            "gender": "male",
+            "role": "staff",
+            "isActive": true
+        },
+        {
+            "id": "rooney10",
+            "username": "Wayne Rooney",
+            "password": "rooney10@Z",
+            "email": "rooney10@gmail.com",
+            "gender": "male",
+            "role": "staff",
+            "isActive": true
+        },
+        {
+            "id": "neymar10",
+            "username": "Neymar Jr",
+            "password": "@neymar10Az",
+            "email": "neymar10@gmail.com",
+            "gender": "male",
+            "role": "staff",
+            "isActive": true
+        },
+        {
+            "id": "henry14",
+            "username": "Thiery Henry",
+            "email": "henry14@gmail.com",
+            "password": "@henry14Az",
+            "gender": "male",
+            "role": "",
+            "isActive": false
+        },
+        {
+            "id": "thanh123",
+            "username": "Thanh Nguyen",
+            "password": "@19112k3Az",
+            "email": "thanh123@gmail.com",
+            "gender": "male",
+            "role": "",
+            "isActive": true
+        }
+    ],
+    "roles": [
+        {
+            "code": "staff",
+            "name": "staff"
+        },
+        {
+            "code": "quality",
+            "name": "quality"
+        }
+    ],
+    "customers": [],
+    "products": [
+        {
+            "id": 2,
+            "title": "Iphone XS MAX",
+            "description": "iPhone XS Max là một trong những sản phẩm điện thoại cao cấp của nhà sản xuất Apple, được ra mắt vào năm 2018. Điện thoại này có màn hình OLED kích thước 6.5 inch với độ phân giải 1242 x 2688 pixel, cho khả năng hiển thị các hình ảnh và video rất sắc nét. iPhone XS Max được trang bị bộ vi xử lý A12 Bionic, RAM 4 GB và bộ nhớ trong có sẵn từ 64GB cho đến 512GB để lưu trữ các tập tin và dữ liệu. Máy ảnh kép 12MP ở mặt sau cho chất lượng hình ảnh rất tốt, còn camera trước là 7MP. iPhone XS Max cũng được tích hợp nhiều tính năng tiên tiến như Face ID, công nghệ sạc nhanh và chống nước, sử dụng hệ điều hành iOS 12 và có hàng loạt tiện ích khác như ứng dụng chụp ảnh, tạo video và tin nhắn iMessage.",
+            "categoryId": 1,
+            "images": [
+                "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/coalqsdfkzmbliyykgyo.jpg",
+                "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/fobz10z1bqflvrynhgwg.jpg",
+                "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/rdimuuxv9gvpzvsvpzyw.jpg",
+                "http://res.cloudinary.com/dh96qogra/image/upload/v1686294141/uploads/zdfem5v0qklbzctharxw.jpg"
+            ],
+            "cost": 10000,
+            "price": 9888
+        },
+        {
+            "title": "Điện thoại iPhone 14 Pro Max",
+            "description": "iPhone 14 Pro Max một siêu phẩm trong giới smartphone được nhà Táo tung ra thị trường vào tháng 09/2022. Máy trang bị con chip Apple A16 Bionic vô cùng mạnh mẽ, đi kèm theo đó là thiết kế hình màn hình mới, hứa hẹn mang lại những trải nghiệm đầy mới mẻ cho người dùng iPhone.",
+            "categoryId": 1,
+            "images": [
+                "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/zbaivtv9z8taspgb1u9u.jpg",
+                "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/kcvjx6sorbcxsrhhclq6.jpg",
+                "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/ee9itrqgwkntff0nbwla.jpg",
+                "http://res.cloudinary.com/dh96qogra/image/upload/v1686294904/uploads/r5gsuqucxelwoag1lyiq.jpg"
+            ],
+            "cost": 2900,
+            "price": 2890,
+            "id": 3
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "title": "Iphone"
+        },
+        {
+            "id": 2,
+            "title": "Xiao Mi"
+        },
+        {
+            "id": 3,
+            "title": "Realme"
+        },
+        {
+            "id": 4,
+            "title": "Oppo"
+        },
+        {
+            "id": 5,
+            "title": "Nokia"
+        },
+        {
+            "id": 6,
+            "title": "Samsung"
+        }
+    ]
 }

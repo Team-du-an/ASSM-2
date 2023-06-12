@@ -1,21 +1,21 @@
 <div class="container">
   <h1>Đăng kí</h1>
-  <form>
-    <div class="form-group">
+  <form [formGroup]="formSignup" (ngSubmit)="onHandleSubmit()">
+    <div class="form-group" >
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <input type="text" id="name" name="name" placeholder="Enter your name"  formControlName="name">
     </div>
     <div class="form-group">
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input type="email" id="email" name="email" placeholder="Enter your email"  formControlName="email">
     </div>
     <div class="form-group">
       <label for="password">Password</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input type="password" id="password" name="password" placeholder="Enter your password"  formControlName="password">
     </div>
     <div class="form-group">
       <label for="confirm-password">Confirm Password</label>
-      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm your password"  formControlName="confirmPassword">
     </div>
     <button type="submit">Register</button>
   </form>

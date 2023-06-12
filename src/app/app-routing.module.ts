@@ -14,6 +14,9 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 const routes: Routes = [
     {
@@ -71,6 +74,18 @@ const routes: Routes = [
                 path: 'products',
                 component: ProductPageComponent,
             },
+            {
+                path: 'contact',
+                component: ContactComponent,
+            },
+            {
+                path: 'about',
+                component: AboutComponent,
+            },
+            {
+                path: 'blog',
+                component: BlogComponent,
+            }
         ],
     },
 ];

@@ -28,6 +28,9 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
     declarations: [
@@ -48,6 +51,9 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
         HomePageComponent,
         CartPageComponent,
         ProductPageComponent,
+        ContactComponent,
+        AboutComponent,
+        BlogComponent,
     ],
     imports: [
         BrowserModule,

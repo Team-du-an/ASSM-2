@@ -30,7 +30,7 @@ export class SigninComponent {
 
                 this.userData = data;
 
-                sessionStorage.setItem('email', this.userData.username);
+                sessionStorage.setItem('username', this.userData.username);
                 sessionStorage.setItem('user-role', this.userData.role);
                 this.router.navigateByUrl('/');
                 this.toastr.success('Đăng nhập thành công', '😁😁😁');

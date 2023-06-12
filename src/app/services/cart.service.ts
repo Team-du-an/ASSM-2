@@ -29,8 +29,6 @@ export class CartService {
         } else {
             this.toastr.warning('Bạn chưa đăng nhập', 'Vui lòng đăng nhập để thêm vào giỏ hàng');
         }
-
-        console.log(this.cartItemList);
     }
 
     getTotalPrice(): number {

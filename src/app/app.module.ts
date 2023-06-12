@@ -32,11 +32,11 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { MacPageComponent } from './pages/mac-page/mac-page.component';
 
 @NgModule({
     declarations: [
-        
         AppComponent,
         RegisterComponent,
         LoginComponent,
@@ -57,6 +57,7 @@ import { MacPageComponent } from './pages/mac-page/mac-page.component';
         ContactComponent,
         AboutComponent,
         BlogComponent,
+        ProductDetailComponent,
         MacPageComponent,
     ],
     imports: [

@@ -32,7 +32,13 @@ export class AuthService {
     isLoggedIn() {
         return sessionStorage.getItem('username') != null;
     }
-
+    signup(data: any): Observable<any> {
+        return this.http.post('http://localhost:3000/users', data);
+      }
+      signin(data: any): Observable<any> {
+        return this.http.post('http://localhost:3000/users', data);
+      }
+    
     getUserRole() {
         return sessionStorage.getItem('user-role') != null ? sessionStorage.getItem('user-role')?.toString() : '';
     }

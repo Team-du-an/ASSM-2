@@ -17,6 +17,8 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { CustomerGuard } from './middlewares/customer.guard';
 import { MacPageComponent } from './pages/mac-page/mac-page.component';
 
 const routes: Routes = [
@@ -61,7 +63,7 @@ const routes: Routes = [
         path: '',
         component: BaseLayoutComponent,
         children: [
-            { path: 'signin', component: SigninComponent },
+            { path: 'signin', component: SigninComponent, canActivate: [CustomerGuard] },
             { path: 'signup', component: SignupComponent },
             {
                 path: '',
@@ -80,6 +82,10 @@ const routes: Routes = [
                 component: ProductPageComponent,
             },
             {
+                path: 'products/:id',
+                component: ProductDetailComponent,
+            },
+            {
                 path: 'contact',
                 component: ContactComponent,
             },
@@ -90,7 +96,7 @@ const routes: Routes = [
             {
                 path: 'blog',
                 component: BlogComponent,
-            }
+            },
         ],
     },
 ];

@@ -45,7 +45,6 @@ export class LoginComponent {
                     if (this.userData.isActive === true) {
                         sessionStorage.setItem('username', this.userData.id);
                         sessionStorage.setItem('user-role', this.userData.role);
-
                         this.router.navigate(['/admin']);
                     } else {
                         this.toastr.error('Vui lòng liên hệ admin', 'Bạn chưa được xác thực');

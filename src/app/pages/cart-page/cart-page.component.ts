@@ -9,7 +9,6 @@ import { CartService } from 'src/app/services/cart.service';
 export class CartPageComponent implements OnInit {
     public products: any = [];
     public grandTotal: number = 0;
-    public orderSuccess: boolean = false;
 
     constructor(private cartService: CartService) {}
 
@@ -22,8 +21,7 @@ export class CartPageComponent implements OnInit {
         this.cartService.getProduct().subscribe((res) => {
             this.products = res;
             this.calculateGrandTotal();
-          });
-          
+        });
     }
     calculateGrandTotal() {
         let grandTotal = 0;
@@ -32,7 +30,7 @@ export class CartPageComponent implements OnInit {
             grandTotal += item.quantity * item.price;
         }
         return grandTotal;
-      }
+    }
 
     removeCartItem(item: any) {
         this.cartService.removeCartItem(item);
@@ -45,9 +43,8 @@ export class CartPageComponent implements OnInit {
     }
     checkout() {
         // Các xử lý liên quan đến đặt hàng
-    
+
         // Hiển thị thông báo đặt hàng thành công
         this.orderSuccess = true;
     }
-    
 }

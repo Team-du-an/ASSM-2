@@ -1,5 +1,6 @@
 import { Component, DoCheck } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/auth.service';
 import { CartService } from 'src/app/services/cart.service';
 
@@ -10,19 +11,25 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class BaseLayoutComponent implements DoCheck {
     isMenuRequired = false;
+    isLoggedIn = false;
     isMenuAdminUser = false;
     isSidebar = false;
     grandTotal: number = 0;
 
-    constructor(private router: Router, private cartService: CartService, private service: AuthService) {}
+    constructor(
+        private router: Router,
+        private cartService: CartService,
+        private service: AuthService,
+        private toastr: ToastrService,
+    ) {}
 
     ngDoCheck(): void {
-        let currentUrl = this.router.url;
+        let currentUrl = this.service.getUserRole();
 
-        if (currentUrl === '/admin/login' || currentUrl === '/admin/register') {
-            this.isMenuRequired = false;
+        if (currentUrl) {
+            this.isLoggedIn = true;
         } else {
-            this.isMenuRequired = true;
+            this.isLoggedIn = false;
         }
 
         if (this.service.getUserRole() === 'admin') {
@@ -34,6 +41,11 @@ export class BaseLayoutComponent implements DoCheck {
         this.cartService.getProduct().subscribe((res) => {
             this.grandTotal = res.length;
         });
+    }
+
+    logout(): void {
+        this.toastr.info('Đã đăng xuất');
+        sessionStorage.clear();
     }
 
     handleShow(): void {

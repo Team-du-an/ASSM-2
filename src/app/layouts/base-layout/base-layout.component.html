@@ -41,13 +41,16 @@
                             class="text-gray-700 hover:text-gray-600 dark:text-gray-400">Collection</a>
                     </li>
 
-                    <li class="mr-12"><a routerLink="/blog" href="" class="text-gray-700 hover:text-gray-600 dark:text-gray-400">Blog</a>
+                    <li class="mr-12"><a routerLink="/blog" href=""
+                            class="text-gray-700 hover:text-gray-600 dark:text-gray-400">Blog</a>
                     </li>
 
-                    <li class="mr-12"><a routerLink="/about" href="" class="text-gray-700 hover:text-gray-600 dark:text-gray-400">About</a>
+                    <li class="mr-12"><a routerLink="/about" href=""
+                            class="text-gray-700 hover:text-gray-600 dark:text-gray-400">About</a>
                     </li>
-                    
-                    <li class="mr-12"><a routerLink="/contact" href="" class="text-gray-700 hover:text-gray-600 dark:text-gray-400">Contact</a>
+
+                    <li class="mr-12"><a routerLink="/contact" href=""
+                            class="text-gray-700 hover:text-gray-600 dark:text-gray-400">Contact</a>
                     </li>
                 </ul>
                 <div
@@ -88,7 +91,13 @@
                             class="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-red-500 flex justify-center items-center text-white">{{grandTotal}}</span>
                     </a>
                     <!-- User -->
-                    <a routerLink="/signin"
+
+                    <button (click)="logout()" *ngIf="isLoggedIn == true"
+                        class="ml-4 items-center hidden px-2 py-2 bg-blue-500 text-white rounded text-sm font-semibold lg:flex dark:text-gray-400">
+                        Đăng xuất
+                    </button>
+
+                    <a *ngIf="isLoggedIn == false" routerLink="/signin"
                         class="items-center hidden pl-6 text-sm font-semibold lg:flex dark:text-gray-400">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                             class="mr-1 bi bi-person" viewBox="0 0 16 16">

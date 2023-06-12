@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
     providedIn: 'root',
 })
 export class CartService {
+    constructor(private toastr: ToastrService) {}
+
     public cartItemList: any = [];
     public productList = new BehaviorSubject<any>([]);
-
-    constructor() {}
 
     getProduct() {
         return this.productList.asObservable();
@@ -20,9 +21,14 @@ export class CartService {
     }
 
     addToCart(product: any) {
-        this.cartItemList.push(product);
-        this.productList.next(this.cartItemList);
-        this.getTotalPrice();
+        if (sessionStorage.getItem('user-role')) {
+            this.cartItemList.push(product);
+            this.productList.next(this.cartItemList);
+            this.getTotalPrice();
+            this.toastr.success('Đã thêm vào giỏ hàng', 'Mua thêm đi 😁😁');
+        } else {
+            this.toastr.warning('Bạn chưa đăng nhập', 'Vui lòng đăng nhập để thêm vào giỏ hàng');
+        }
 
         console.log(this.cartItemList);
     }

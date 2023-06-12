@@ -1,22 +1,53 @@
-<div class="container">
-  <h1>Đăng kí</h1>
-  <form [formGroup]="formSignup" (ngSubmit)="onHandleSubmit()">
-    <div class="form-group" >
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name"  formControlName="name">
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email"  formControlName="email">
-    </div>
-    <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password"  formControlName="password">
-    </div>
-    <div class="form-group">
-      <label for="confirm-password">Confirm Password</label>
-      <input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm your password"  formControlName="confirmPassword">
-    </div>
-    <button type="submit">Register</button>
-  </form>
+<div class="w-[800px] mx-auto">
+  <mat-card-content>
+    <form [formGroup]="formSignup" (ngSubmit)="onHandleSubmit()">
+      <mat-card>
+        <mat-form-field>
+          <mat-label>Tên đăng nhập</mat-label>
+          <input matInput type="text" formControlName="id">
+        </mat-form-field>
+      </mat-card>
+      <mat-card>
+        <mat-form-field>
+          <mat-label>Tên đầy đủ</mat-label>
+          <input matInput type="text" formControlName="username">
+        </mat-form-field>
+      </mat-card>
+
+      <mat-card>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput type="email" formControlName="email">
+        </mat-form-field>
+      </mat-card>
+
+      <mat-card>
+        <mat-form-field>
+          <mat-label>Mật khẩu</mat-label>
+          <input matInput type="password" formControlName="password">
+        </mat-form-field>
+      </mat-card>
+
+      <mat-card>
+        <mat-form-field>
+          <mat-label>Mật khẩu</mat-label>
+          <input matInput type="password" formControlName="confirmPassword">
+        </mat-form-field>
+      </mat-card>
+
+      <div>
+        <mat-radio-group formControlName="gender" aria-label="Gender">
+          <mat-radio-button value="male">Male</mat-radio-button>
+          <mat-radio-button value="female">Female</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <div class="d-flex gap-2 mt-4">
+        <button mat-raised-button color="primary" type="submit">Đăng ký</button>
+        <button mat-raised-button color="accent"><a routerLink="/admin/login" class="text-white">Trờ lại đăng
+            nhập</a></button>
+      </div>
+
+    </form>
+  </mat-card-content>
 </div>

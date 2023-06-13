@@ -11,7 +11,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class SigninComponent {
     formSignin = this.fb.group({
-        username: ['', [Validators.required]],
+        id: ['', [Validators.required]],
         password: ['', [Validators.required, Validators.minLength(6)]],
     });
 
@@ -25,12 +25,12 @@ export class SigninComponent {
     ) {}
     onHandleSubmit() {
         if (this.formSignin.valid) {
-            this.authServices.getById(this.formSignin.value.username).subscribe((data) => {
+            this.authServices.getById(this.formSignin.value.id).subscribe((data) => {
                 console.log(data);
 
                 this.userData = data;
 
-                sessionStorage.setItem('username', this.userData.username);
+                sessionStorage.setItem('username', this.userData.id);
                 sessionStorage.setItem('user-role', this.userData.role);
                 this.router.navigateByUrl('/');
                 this.toastr.success('Đăng nhập thành công', '😁😁😁');

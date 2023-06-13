@@ -148,5 +148,17 @@
       "id": 6,
       "title": "Samsung"
     }
+  ],
+  "orders": [
+    {
+      "name": "Nguyễn Trọng Thanh",
+      "city": "city",
+      "address": "địa chỉ",
+      "code": "1273871783",
+      "status": 1,
+      "email": "vandesar1@gmail.com",
+      "userId": "vandesar1",
+      "id": 1
+    }
   ]
 }

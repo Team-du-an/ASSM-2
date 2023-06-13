@@ -62,7 +62,6 @@ export class ProductPageComponent implements OnInit {
     }
 
     addToCart(item: any) {
-        this.toastr.success('Bạn đã thêm sản phẩm vào giỏ hàng', 'Mua thêm đi 😁😁');
         this.cartService.addToCart(item);
     }
 }

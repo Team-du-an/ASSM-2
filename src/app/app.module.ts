@@ -34,6 +34,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { MacPageComponent } from './pages/mac-page/mac-page.component';
+import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
+import { OrderPageComponent } from './pages/order-page/order-page.component';
 
 @NgModule({
     declarations: [
@@ -59,6 +61,8 @@ import { MacPageComponent } from './pages/mac-page/mac-page.component';
         BlogComponent,
         ProductDetailComponent,
         MacPageComponent,
+        CheckoutPageComponent,
+        OrderPageComponent,
     ],
     imports: [
         FormsModule,

@@ -1,0 +1,28 @@
+<div class="w-[1260px] mx-auto mt-20">
+    <form [formGroup]="createForm" (ngSubmit)="onHandleSubmit()">
+
+        <mat-form-field>
+            <mat-label>Tên của bạn</mat-label>
+            <input formControlName="name" matInput>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Chọn vùng</mat-label>
+            <mat-select formControlName="city">
+                <mat-option value="one">-- Tỉnh hoặc thành phố --</mat-option>
+                <mat-option *ngFor="let city of cityArr" value="city">{{city}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Địa chỉ chi tiết</mat-label>
+            <textarea formControlName="address" matInput></textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Số thẻ ngân hàng : MM/YY</mat-label>
+            <input formControlName="code" matInput>
+        </mat-form-field>
+
+        <button class="text-base px-4 py-2 bg-blue-500 rounded text-white">
+            Đặt hàng
+        </button>
+    </form>
+</div>

@@ -20,6 +20,8 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { CustomerGuard } from './middlewares/customer.guard';
 import { MacPageComponent } from './pages/mac-page/mac-page.component';
+import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
+import { OrderPageComponent } from './pages/order-page/order-page.component';
 
 const routes: Routes = [
     {
@@ -96,6 +98,14 @@ const routes: Routes = [
             {
                 path: 'blog',
                 component: BlogComponent,
+            },
+            {
+                path: 'checkout',
+                component: CheckoutPageComponent,
+            },
+            {
+                path: 'orders',
+                component: OrderPageComponent,
             },
         ],
     },

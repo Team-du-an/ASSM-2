@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { CartService } from 'src/app/services/cart.service';
 
 @Component({
@@ -9,9 +10,9 @@ import { CartService } from 'src/app/services/cart.service';
 export class CartPageComponent implements OnInit {
     public products: any = [];
     public grandTotal: number = 0;
-    public orderSuccess = true;
+    public orderSuccess = false;
 
-    constructor(private cartService: CartService) {}
+    constructor(private cartService: CartService, private toastr: ToastrService) {}
 
     ngOnInit(): void {
         this.cartService.getProduct().subscribe((res) => {
@@ -46,6 +47,6 @@ export class CartPageComponent implements OnInit {
         // Các xử lý liên quan đến đặt hàng
 
         // Hiển thị thông báo đặt hàng thành công
-        this.orderSuccess = true;
+        this.toastr.success('Bạn đã đặt hàng thành công', '😊😊😊');
     }
 }

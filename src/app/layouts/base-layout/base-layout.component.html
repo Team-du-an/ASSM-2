@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="items-center justify-end hidden lg:flex dark:text-gray-400">
-                    <a href="/orders" class="mr-6">
+                    <a *ngIf="isOrder" href="/orders" class="mr-6">
                         Đặt hàng
                     </a>
                     <!-- Cart page -->

@@ -15,6 +15,7 @@ export class BaseLayoutComponent implements DoCheck {
     isMenuAdminUser = false;
     isSidebar = false;
     grandTotal: number = 0;
+    isOrder = false;
 
     constructor(
         private router: Router,
@@ -36,6 +37,12 @@ export class BaseLayoutComponent implements DoCheck {
             this.isMenuAdminUser = true;
         } else {
             this.isMenuAdminUser = false;
+        }
+
+        if (sessionStorage.getItem('username')) {
+            this.isOrder = true;
+        } else {
+            this.isOrder = false;
         }
 
         this.cartService.getProduct().subscribe((res) => {

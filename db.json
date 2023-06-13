@@ -12,10 +12,10 @@
     {
       "id": "test1",
       "username": "Test Nguyen",
-      "email": "test1@gmail.com",
       "password": "@19112k3aZ",
+      "email": "test1@gmail.com",
       "gender": "female",
-      "role": "",
+      "role": "member",
       "isActive": false
     },
     {
@@ -75,12 +75,11 @@
     {
       "id": "vandesar1",
       "username": "Edwin Van de Sar",
-      "email": "vandesar1@gmail.com",
       "password": "vandesar1",
-      "confirmPassword": "vandesar1",
+      "email": "vandesar1@gmail.com",
       "gender": "male",
       "role": "member",
-      "isActive": true
+      "isActive": false
     }
   ],
   "roles": [
@@ -91,6 +90,10 @@
     {
       "code": "quality",
       "name": "quality"
+    },
+    {
+      "code": "member",
+      "name": "member"
     }
   ],
   "products": [
@@ -121,6 +124,47 @@
       ],
       "cost": 2911,
       "price": 2890
+    },
+    {
+      "title": "Samsung Galaxy Prime",
+      "description": "Samsung là một tập đoàn đa quốc gia đến từ Hàn Quốc, chuyên sản xuất, kinh doanh các sản phẩm công nghệ như điện thoại di động, máy tính bảng, tivi, máy giặt, tủ lạnh và nhiều sản phẩm khác. Samsung cũng có sự phát triển mạnh mẽ trong lĩnh vực chip vi xử lý, màn hình, bộ nhớ và các sản phẩm điện tử tiêu dùng khác. Samsung được coi là một trong những thương hiệu công nghệ hàng đầu thế giới.",
+      "categoryId": 6,
+      "images": [
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686625868/uploads/wlyqdugvkkwcmyxu7zrx.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686625868/uploads/ayuzvxwxeeudsfqyeohq.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686625868/uploads/q5fa8wnudckuafo9k72l.jpg"
+      ],
+      "cost": 2000,
+      "price": 1960,
+      "id": 4
+    },
+    {
+      "title": "MacBook Air Pro",
+      "description": "MacBook Air Pro",
+      "categoryId": 7,
+      "images": [
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686626017/uploads/fdywhrv0k4avy7zucexn.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686626017/uploads/avrvvhshubmcau1uxyc2.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686626017/uploads/ftowfeanbajzihmjfsrb.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686626017/uploads/pe2yovzsbs8ak0ta9jkb.jpg"
+      ],
+      "cost": 3600,
+      "price": 3566,
+      "id": 5
+    },
+    {
+      "title": "Realme Nazo 30A",
+      "description": "Realme Nazo 30A",
+      "categoryId": 3,
+      "images": [
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686626314/uploads/vc5lsovjqzebtlu793lc.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686626314/uploads/klv9l1d8liiclcplwxuu.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686626314/uploads/h7fgx96gsvesaufpw3g0.jpg",
+        "http://res.cloudinary.com/dh96qogra/image/upload/v1686626314/uploads/los9pq75qvofkopefccl.jpg"
+      ],
+      "cost": 790,
+      "price": 760,
+      "id": 6
     }
   ],
   "categories": [
@@ -147,6 +191,14 @@
     {
       "id": 6,
       "title": "Samsung"
+    },
+    {
+      "id": 7,
+      "title": "MacOs"
+    },
+    {
+      "id": 8,
+      "title": "Acer Nito"
     }
   ],
   "orders": [
